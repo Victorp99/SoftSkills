@@ -1,0 +1,410 @@
+/* Color Scheme #18206F #17255A #F5E2C8 #D88373 #BD1E1E */
+@import url(https://fonts.googleapis.com/css?family=Poiret+One|Josefin+Sans:400,700|Fredoka+One|Comfortaa:400,700);
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+
+  font-family: 'Comfortaa', cursive;
+
+}
+.container-fluid {
+
+margin: 0;
+padding: 0;
+}
+
+.menuBars {
+
+  font-size: 40px;
+  right: 0px;
+  top: 5%;
+  position: fixed;
+  margin-right: 5%;
+}
+
+.menuBars:hover {
+
+  text-shadow: -1px 1px 8px #D88373, 1px -1px 8px #fff;
+  cursor: pointer;
+  color: white;
+
+}
+
+.titleMenu {
+display: none;
+margin-top: 50px;
+margin-right: 5%;
+font-weight: bold;
+
+}
+
+.theTitle {
+  text-align: center;
+  height: 100px;
+  width: 100%;
+  position: absolute;
+  font-size: 100px; /*can use percentages with font-size */
+  top: 50%;
+  margin-top: -50px;
+
+}
+
+.subtext {
+  text-align: center;
+  height: 100px;
+  width: 50%;
+  margin-left: 325px;
+  position: absolute;
+  top: 50%;
+  margin-top: +60px;
+  overflow: hidden;
+
+}
+
+/* Title Section */
+.titleScreen {
+  position: relative;
+  height: 600px;
+  overflow: hidden;
+  background-color: #BD1E1E; /*#BD1E1E */
+}
+
+/*Communication Section */
+.communicationScreen {
+  position: relative;
+  height: 700px;
+  overflow: hidden;
+  background-color: #17255A; /*#17255A */
+}
+
+.communicationTitle {
+  text-align: center;
+  height: 100px;
+  width: 100%;
+  font-size: 100px;
+  top: 50%;
+  margin-top: +50px;
+  color: white;
+
+
+}
+
+.communicationText {
+
+  height: 430px;
+  width: 100%;
+  margin-top: +60px;
+  background-color: white; /*white */
+  border-radius: 25px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+.communicationPic {
+
+  height: 300px;
+  width: 60%;
+  margin-top: +60px;
+
+  /* background-attachment: fixed; makes the periscope effect */
+
+}
+
+.communicationButton {
+  margin-left: -47px;
+  margin-top: -50px;
+  -webkit-transition-timing-function: ease-in-out;
+  opacity: 0;
+
+}
+
+/*People Skills Section */
+.peopleScreen {
+  position: relative;
+  height: 700px;
+  overflow: hidden;
+  background-color: #F5E2C8; /*#F5E2C8 */
+}
+
+.people {
+  /*position: absolute;*/
+
+  height: 100px;
+  width: 90%;
+  font-size: 100px;
+  top: 50%;
+  margin-top: +62px; /* dictates how far from the top the element is */
+
+  margin-right: -100px;
+  -webkit-transform: rotate(20deg);
+  -moz-transform: rotate(20deg);
+  -o-transform: rotate(20deg);
+  transform: rotate(20deg);
+
+}
+.skills {
+  /*position: absolute;*/
+
+  height: 100px;
+  width: 90%;
+  font-size: 100px;
+  top: 50%;
+  margin-top: +75px;
+
+  /*margin-left: -50px;*/
+  -webkit-transform: rotate(-20deg);
+  -moz-transform: rotate(-20deg);
+  -o-transform: rotate(-20deg);
+  transform: rotate(-20deg);
+
+}
+
+.triangle {
+  position: absolute;
+	width: 100%;
+	height: 25%;
+  /*top: 50%;*/
+  /*margin-top: +90px;*/
+	border-left: 660px solid transparent; /*left side of triangle, the larger the number, the steeper the angle of the sides */
+	border-right:660px solid transparent; /*right side of triangle */
+	border-top: 240px solid #D88373; /*#D88373 */ /*bottom side of triangle, the bigger the number, the longer it is */
+
+	font-size: 0;
+	line-height: 0;
+}
+
+.peopleText {
+
+  height: 300px;
+  width: 100%;
+  margin-top: +60px;
+  background-color: white; /*white */
+  border-radius: 25px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+/*Time Management section */
+.timeScreen {
+  position: relative;
+  height: 700px;
+  overflow: hidden;
+  background-color: #D88373; /*#D88373 */
+}
+
+.circleWindow {
+  min-height: 700px;
+  margin-top: -50px;
+  background-image: url(clock.png);
+  background-size: cover;
+  background-position: left center;
+  background-repeat: no-repeat;
+  /*border-radius: 50%;*/
+  background-attachment: fixed;
+
+}
+
+.timeTitle {
+  text-align: center;
+  height: 100px;
+  width: 100%;
+  font-size: 100px;
+  top: 50%;
+  margin-top: +50px;
+}
+
+.timeText {
+
+  height: 300px;
+  width: 100%;
+  margin-top: +60px;
+}
+
+
+
+/*Contact Me */
+.contactScreen {
+  position: relative;
+  height: 700px;
+  overflow: hidden;
+  background-color: #18206F; /*#18206F */
+}
+
+.contactTitle {
+  text-align: center;
+  height: 100px;
+  width: 100%;
+  font-size: 100px;
+  top: 50%;
+  margin-top: +50px;
+  color:white;
+
+
+}
+
+.contactPic {
+
+  width: 20%;
+  height: 10%;
+  margin-top: 100px;
+}
+
+.name {
+  height: 100px;
+  width: 100%;
+  font-size: 70px;
+  color:white;
+}
+
+/*communication.html css */
+
+.talking {
+
+  height: 500px; /*500px */
+  width: 80%;
+  margin-left: 50px;
+
+
+}
+
+.picDiv {
+
+  height: 100%; /*div that contains the picture */
+  width: 50%;
+}
+
+.softSkills {
+  height: 100px;
+  /*width: 100%;*/
+  font-size: 100px;
+  /*top: 50%;
+  margin-top: -50px;
+  */
+
+}
+
+.skillTitle {
+
+  height:100px;
+  font-size: 75px;
+  width: 100%;
+}
+
+.skillHeader {
+
+  /*position: relative;*/
+  width: 100%;
+  height: 120px;
+  background-color: #BD1E1E; /*#BD1E1E */
+}
+
+.links {
+
+  margin-top: 100px;
+  font-weight: bold;
+
+}
+.links:hover {
+
+  text-shadow: -1px 1px 8px #D88373, 1px -1px 8px #fff;
+  color: white;
+
+
+
+}
+.ref {
+
+  color:inherit;
+  text-decoration:inherit;
+  font-weight: bold;
+}
+.ref:hover {
+  text-shadow: -1px 1px 8px #D88373, 1px -1px 8px #fff;
+  text-decoration: none;
+  color: white;
+}
+
+a {
+
+  color: inherit; /* blue colors for links too */
+  text-decoration: inherit; /* no underline */
+}
+
+a:hover
+{
+     color:inherit;
+     text-decoration:none;
+
+
+}
+
+.skillImproveContainer {
+background-color:#D88373;
+height: 700px;
+
+}
+
+.skillText1, .skillText2{
+
+  padding-left: 5%;
+  padding-right: 5%;
+
+}
+.skillText4 {
+
+  background-color: white;
+  /*text-align: center;*/
+  height: 400px;
+  width: 70%;
+
+  border-radius: 25px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+.footer1 {
+  background-color: #18206F;
+  width: 100%;
+  height: 200px;
+  color: white;
+}
+
+.footNav {
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-top: 50px;
+  font-weight: bold;
+
+}
+
+.footText:hover {
+
+  text-shadow: -1px 1px 8px #ffc, 1px -1px 8px #fff;
+  color: white;
+}
+
+.bar {
+  height: 10%;
+  background-color: #17255A;
+}
+
+
+.icons {
+
+  padding-left: 25px;
+  font-size: 30px;
+}
+
+.icons:hover {
+
+  cursor: pointer;
+text-shadow: -1px 1px 8px #ffc, 1px -1px 8px #fff;
+}
