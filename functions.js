@@ -67,8 +67,11 @@ $("#formButton").click(function(){
 });
 
 $(".menuBars").click(function(){
-  
+
    $(".titleMenu").slideToggle(700, "swing");
+   $(".titleMenu").css({"position":"fixed"
+   });
+   /*$(".titleMenu").css({"background-color":"#A40505"});*/ /*put it on hover instead */
 
 });
 
@@ -87,6 +90,12 @@ $(window).scroll(function(){
     'transform' : 'translate(0px, '+ wScroll /2 +'%)'
   });
 
+
+  if (document.documentElement.clientWidth > 768) { /*doesn't do animations if it is on mobile */
+	// scripts
+
+
+
   if(wScroll > $('.communicationScreen').offset().top - $(window).height()){
 
 
@@ -96,11 +105,13 @@ $(window).scroll(function(){
     $('.communicationTitle').css({'transform': 'translate(0px,'+ offset1 +'px)'});
     $('.communicationText').css({'transform': 'translate('+ offset1 +'px, 0px)'});
     $('.communicationPic').css({'transform': 'translate('+ Math.abs(offset1) +'px, 0px)'});
+
     //$('.communicationButton').css({'opacity': ''+ offset2 + 1+''});
     var opacity = (wScroll - $('.communicationScreen').offset().top + $(window).height() -654) / (wScroll / 8);
     $('.communicationButton').css({'opacity': opacity});
 
   }
+}/*checking for size ends */
 
   if(wScroll > $('.peopleScreen').offset().top - $(window).height()){
 
@@ -108,6 +119,7 @@ $(window).scroll(function(){
 
     /*console.log(offset4);*/
     offset4 += offset4 + 2;
+    if (document.documentElement.clientWidth > 768) { /*doesn't do animations if it is on mobile */
 
     $('.people').css({
       '-webkit-transform':'rotate(20deg)',
@@ -115,15 +127,30 @@ $(window).scroll(function(){
       '-o-transform':'rotate(20deg)',
       'transform': 'translate(0px,'+ offset4 +'px) rotate(20deg)'
     });
+
     $('.skills').css({
       '-webkit-transform':'rotate(-20deg)',
       '-moz-transform':'rotate(-20deg)',
       '-o-transform':'rotate(-20deg)',
       'transform': 'translate(0px,'+ offset4 +'px) rotate(-20deg)'
     });
+
     $('.triangle').css({'transform': 'translate(0px,'+ offset4 +'px)'});
     $('.leftperson').css({'transform': 'translate('+ offset4 +'px, 0px)'});
     $('.rightperson').css({'transform':'translate('+ offset4 * -1 +'px, 0px)'});
+  }
+  else {
+    $('.people').css({
+      'transform': 'translate(0px,'+ offset4 +'px)'
+    });
+
+    $('.skills').css({
+      'transform': 'translate(0px,'+ offset4 +'px)'
+    });
+
+
+    $('.triangle').css({'transform': 'translate(0px,'+ offset4 +'px)'});
+  }
 
   }
 
