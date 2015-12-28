@@ -27,7 +27,13 @@
     <!-- Bootstrap container div -->
     <div class = "container-fluid bootDiv">
       <header class ="titleScreen">
+        <nav class = "titleMenu">
+      <a href = "communication.html" class = "links screenNav">Communication</a>
+      <a href= "peopleskills.html" class ="links screenNav">People Skills</a>
+      <a href= "timemanagement.html" class ="links screenNav">Time Management</a>
+    </nav>
         <div class ="theTitle">Soft Skills</div>
+        <br>
         <p class = "subtext">
           Soft skills can be described as the personal character traits or qualities each of us has.
           These skills can not be learned by enrolling in a training program, but through experiences that help you develop these skills.
@@ -35,13 +41,13 @@
           IT organizations are now looking for candidates who have both soft and hard skills. A lot of candidates tend to lack in soft skills.
           Below are examples of soft skills.
         </p>
-        
-        <div class ="row titleMenu">
-          <div class = "col-lg-2 col-lg-offset-3 screenNav"><a href= "communication.html" class ="footText">Communication</a></div>
-          <div class ="col-lg-2 screenNav"><a href="peopleskills.html" class ="footText">People Skills</a></div>
-          <div class= "col-lg-3 screenNav"><a href="timemanagement.html" class ="footText">Time Management</a></div>
-          <div class ="col-lg-1"></div>
-        </div>
+        <!--
+      <nav class = "titleMenu">
+    <a href = "communication.html" class = "links screenNav">Communication</a>
+    <a href= "peopleskills.html" class ="links screenNav">People Skills</a>
+    <a href= "timemanagement.html" class ="links screenNav">Time Management</a>
+  </nav>
+-->
 
         <i class="fa fa-bars menuBars"></i>
       </header>
@@ -122,7 +128,7 @@
             </div>
           </div>
           <br>
-          <div style = "text-align:center">
+          <div class = "timeManagementButton">
               <button type ="button" class ="btn btn-info btn-lg" onclick= "location.href = 'timemanagement.html'" value = "Learn More">Learn More</button>
           </div>
         </div>
@@ -139,6 +145,7 @@
             <span class="glyphicon glyphicon-envelope"></span>
           </button>
         </div>
+
         <br>
         <div class ="name" style="text-align:center">Victor Paredes</div>
       </div>
@@ -174,13 +181,25 @@
               <button type="button" id = "formButton" class="btn btn-default">Submit</button>
             </form>
 
+
+            <!-- uses formspree to send mail, don't need php unless you want to make it asynchronous
+
+            <form action="http://formspree.io/you@email.com">
+              <input type="email" name="_replyto">
+              <textarea name="body"></textarea>
+              <input type="submit" value="Send">
+            </form>
+
+
+            -->
+
           </div>
           <div class ="modal-footer">
             <button type ="button" class= "btn btn-info" data-dismiss = "modal">Close</button>
           </div>
         </div>
       </div>
-    </div>
+    </div> <!-- modal ends here -->
 
     </div> <!-- Bootstrap ends here -->
   </body>

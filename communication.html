@@ -18,20 +18,33 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-    <!-- Function script -->
-    <script src ="functions.js"></script>
+
     <link rel="stylesheet" type="text/css" href="layout1.css">
   </head>
   <body>
     <!-- Bootstrap container div -->
     <div class ="container-fluid">
       <div class = "skillHeader">
+        <!-- can change it to only 2 rows -->
+        <!--
         <div class = "row">
           <div class= "col-lg-6 softSkills"><a href="index.html">Soft Skills</a></div>
           <div class= "col-lg-2 links"><a href = "communication.html">Communication</a></div>
           <div class= "col-lg-2 links"><a href= "peopleskills.html">People Skills</a></div>
           <div class= "col-lg-2 links"><a href= "timemanagement.html">Time Management</a></div>
         </div>
+      -->
+
+      <div class = "row">
+        <div class= "col-lg-6 softSkills"><a href="index.html">Soft Skills</a></div>
+        <div class= "col-lg-6">
+          <nav class = "topNav">
+        <a href = "communication.html" class = "links">Communication</a>
+        <a href= "peopleskills.html" class ="links">People Skills</a>
+        <a href= "timemanagement.html" class ="links">Time Management</a>
+      </nav>
+      </div>
+      </div>
       </div>
       <br><br>
       <div style = "text-align:center" class = "skillTitle">Communication</div>
@@ -45,6 +58,9 @@
       </div>
       <br><br>
       <div class= "row">
+        <div class="col-lg-6 picDiv">
+          <img alt="Hi" src= "talking-at-table.jpg" class = "img-circle talking">
+        </div>
         <div class="col-lg-6 skillText2">
 
         <h2>Verbal Communication</h2>
@@ -56,16 +72,17 @@
 
 
         </div>
-        <div class="col-lg-6 picDiv">
-          <img alt="Hi" src= "talking-at-table.jpg" class = "img-circle talking">
-        </div>
+
+
       </div>
       <div class ="skillText3">
 
       </div>
       <br><br>
       <div class = "skillImproveContainer">
-        <div class = "skillTitle" style ="text-align:center">Ways to Improve Communication</div>
+
+        <div class = "skillTitle"  style ="text-align:center">Ways to Improve Communication</div>
+
         <br><br>
         <div class= "row">
           <div class ="col-lg-8 col-lg-offset-2 skillText4">
@@ -138,14 +155,20 @@
           <div class ="col-lg-1"></div>
         </div>
         <br>
-        <div style="text-align:center" class ="footContact">Contact Me: paredesv471@strose.edu</div>
+        <div class ="footContact">Contact Me: paredesv471@strose.edu</div>
         <br>
+        <!--
         <div class = "row">
           <div class ="col-lg-1 col-lg-offset-5"><span class="fa fa-linkedin icons" onclick = "location.href = 'https://www.linkedin.com/in/victor-paredes-839522ab'
 "></span></div>
           <div class ="col-lg-1"><span class="fa fa-github icons" onclick = "location.href = 'https://github.com/Victorp99'"></span></div>
           <div class ="col-lg-5"></div>
         </div>
+      -->
+      <div class = "iconLine">
+        <span class="fa fa-linkedin icons" onclick = "location.href = 'https://www.linkedin.com/in/victor-paredes-839522ab'"></span>
+        <span class="fa fa-github icons" onclick = "location.href = 'https://github.com/Victorp99'"></span>
+      </div>
       </div> <!-- bar -->
       </div>
     </div> <!-- Bootstrap container div ends here -->
