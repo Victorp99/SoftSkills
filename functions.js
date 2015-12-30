@@ -86,10 +86,16 @@ $(window).scroll(function(){
   $('.theTitle').css({
     'transform' : 'translate(0px, '+ wScroll /2 +'%)'
   });
+  if (document.documentElement.clientWidth > 768) { /*doesn't do animations if it is on mobile */
   $('.subtext').css({
-    'transform' : 'translate(0px, '+ wScroll /2 +'%)'
+    'transform' : 'translate(0px, '+ wScroll /3 +'%)'
   });
-
+}
+else {
+  $('.subtext').css({
+    'transform' : 'translate(0px, '+ wScroll /5 +'%)'
+  });
+}
 
   if (document.documentElement.clientWidth > 768) { /*doesn't do animations if it is on mobile */
 	// scripts
